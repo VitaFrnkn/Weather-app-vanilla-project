@@ -1,6 +1,6 @@
 h1{
     font-family: 'Lobster';
-    font-size: 70px;
+    font-size: 60px;
     margin-top: 15px;
     margin-left: 20px;
 }
@@ -15,7 +15,7 @@ main{
     
 }
 .weather-boxing{
-    background-color: ivory;
+    background-color: rgb(245, 229, 243);
     max-width: 600px;
     margin: 45px auto;
     box-shadow: 0 30px 50px rgba(79, 79, 87, 0.6);
@@ -35,11 +35,19 @@ main{
 }
 .search-button{
     color: blueviolet;
-    border:none;
+    border-color: black;
     border-radius: 6px;
     width:18%;
     padding: 15px 20px;
     font-size: 16px;
+    box-shadow: 0 5px 15px rgba(136, 136, 145, 0.6);
+}
+.search-button:hover{
+    color: rgb(245, 229, 243) ;
+    background-color: blueviolet;
+    border-color: black;
+    cursor: pointer;
+
 }
 
 .weather-info{
@@ -52,7 +60,7 @@ main{
 }
 .weather-app-temperature{
     font-family:'Lobster';
-    font-size: 80px;
+    font-size: 60px;
     
     
 }
