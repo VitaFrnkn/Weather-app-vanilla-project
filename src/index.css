@@ -44,6 +44,17 @@ body{
     color: blueviolet;
 
 }
+.weather-app-temperature{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    display: flex;
+
+}
+.weather-app-icon{
+    font-size: 40px;
+
+}
+
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10px;
