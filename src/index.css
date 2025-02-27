@@ -1,8 +1,35 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(190, 185, 192);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.weather-boxing{
+    background-color: ivory;
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgba(79, 79, 87, 0.6);
+    border-radius: 16px;
+    padding: 30px;
+}
 .weather-app-data{
-    color: blue;
+    color: blueviolet;
 
+}
+.search-bar{
+    border: none;
+    border-radius: 6px;
+    width:80%;
+    padding:15px 20px;
+    font-size: 16px;
+}
+.search-button{
+    color: blueviolet;
+    border:none;
+    border-radius: 6px;
+    width:18%;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+footer{
+    font-size: 10px;
+    text-align: center;
 }
