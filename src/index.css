@@ -2,6 +2,7 @@ h1{
     font-family: 'Sacramento';
     font-size: 80px;
     margin-top: 15px;
+    margin-left: 40px;
 }
 
 body{
@@ -49,9 +50,9 @@ main{
 
 }
 .weather-app-temperature{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Sacramento';
     font-size: 80px;
-   
+    
 }
 .weather-app-details {
     display: flex;
@@ -64,12 +65,14 @@ main{
 }
 .weather-degree-icon{
     font-size: 40px;
-    margin-right: 60px;
+    
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .weather-temperature-container{
     display: flex;
     align-items: center; 
+    margin-right: 40px;
 }
 
 footer{
