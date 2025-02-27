@@ -50,17 +50,28 @@ main{
 }
 .weather-app-temperature{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    display: flex; 
-    justify-content: space-between;    
+    font-size: 80px;
+   
 }
 .weather-app-details {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center; 
 }
-
-
+.weather-icon{
+    font-size: 40px;
+    
+    
+}
+.weather-degree-icon{
+    font-size: 40px;
+    margin-right: 60px;
+    
+}
+.weather-temperature-container{
+    display: flex;
+    align-items: center; 
+}
 
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
