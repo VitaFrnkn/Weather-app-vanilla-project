@@ -36,6 +36,14 @@ body{
     padding: 15px 20px;
     font-size: 16px;
 }
+.weather-info{
+    color: rgb(116, 100, 119);
+
+}
+.weather-info strong{
+    color: blueviolet;
+
+}
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10px;
