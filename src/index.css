@@ -8,6 +8,11 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+main{
+    padding: 30px 0;
+    
+
+}
 .weather-boxing{
     background-color: ivory;
     max-width: 600px;
@@ -17,9 +22,8 @@ body{
     padding: 30px;
 }
 .weather-app-data{
-    color: blueviolet;
     font-size: 15px;
-
+    
 }
 .search-bar{
     border: none;
@@ -38,7 +42,7 @@ body{
 }
 .weather-info{
     color: rgb(116, 100, 119);
-
+    
 }
 .weather-info strong{
     color: blueviolet;
@@ -46,14 +50,17 @@ body{
 }
 .weather-app-temperature{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
+    font-size: 20px;
+    display: flex; 
+    justify-content: space-between;    
+}
+.weather-app-details {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center; 
 }
-.weather-app-icon{
-    font-size: 40px;
 
-}
+
 
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
