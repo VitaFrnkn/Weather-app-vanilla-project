@@ -1,6 +1,7 @@
 h1{
     font-family: 'Sacramento';
-    font-size: 60px;
+    font-size: 80px;
+    margin-top: 15px;
 }
 
 body{
@@ -11,7 +12,6 @@ body{
 main{
     padding: 30px 0;
     
-
 }
 .weather-boxing{
     background-color: ivory;
@@ -60,7 +60,6 @@ main{
 }
 .weather-icon{
     font-size: 40px;
-    
     
 }
 .weather-degree-icon{
