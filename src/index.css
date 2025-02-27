@@ -1,6 +1,12 @@
+h1{
+    font-family: 'Sacramento';
+    font-size: 60px;
+}
+
 body{
     background-color: rgb(190, 185, 192);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .weather-boxing{
     background-color: ivory;
@@ -12,13 +18,14 @@ body{
 }
 .weather-app-data{
     color: blueviolet;
+    font-size: 15px;
 
 }
 .search-bar{
     border: none;
     border-radius: 6px;
     width:80%;
-    padding:15px 20px;
+    padding:15px 15px;
     font-size: 16px;
 }
 .search-button{
@@ -30,6 +37,7 @@ body{
     font-size: 16px;
 }
 footer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10px;
     text-align: center;
 }
