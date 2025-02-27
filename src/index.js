@@ -8,7 +8,9 @@ function refreshWeather(response){
     let windElement = document.querySelector("#wind-value");
     let timeElement = document.querySelector("#time")
     let date = new Date(response.data.time *1000); //date data needs to be formatted
+    let iconElement = document.querySelector("#icon");
 
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
     cityElement.innerHTML = response.data.city;//get the city
     timeElement.innerHTML = formatDate(date); // adding the date and time elements
     descriptionElement.innerHTML = response.data.condition.description; // add description element
