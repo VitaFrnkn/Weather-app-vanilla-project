@@ -1,8 +1,8 @@
 h1{
-    font-family: 'Sacramento';
-    font-size: 80px;
+    font-family: 'Lobster';
+    font-size: 70px;
     margin-top: 15px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 body{
@@ -41,6 +41,7 @@ main{
     padding: 15px 20px;
     font-size: 16px;
 }
+
 .weather-info{
     color: rgb(116, 100, 119);
     
@@ -50,14 +51,14 @@ main{
 
 }
 .weather-app-temperature{
-    font-family:'Sacramento';
+    font-family:'Lobster';
     font-size: 80px;
     
     
 }
 .weather-app-details {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center; 
 }
 .weather-icon{
