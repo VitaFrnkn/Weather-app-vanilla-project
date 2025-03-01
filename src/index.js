@@ -41,6 +41,27 @@ function searchCity(city){
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(refreshWeather);
 }
+function displayForecast(){
+    
+    let days = ["Sun","Mon","Tue","Wed","Thu"];
+    let forecastHtml = "";
+    
+    days.forEach(function (days){
+        forecastHtml = forecastHtml + //concatenate and create a massive string injecting html
+        `
+        <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">${days}</div>
+                    <div class="weather-forecast-icon">	&#9925;</div>
+                    <div class="weather-forecast-temperature">
+                        <div class="weather-forecast-temperatures"><strong>15° </strong> 9° </div>
+                    
+                    </div>
+                </div>`;
+    })
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML=forecastHtml;
+    
+}
 
 //adding search engine and replacing h1 with the submitted search
 function handleSearch(event){
@@ -52,3 +73,4 @@ let searchFormElement = document.querySelector('#search-form');
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("Tokyo");//default city when first opening the app
+displayForecast();

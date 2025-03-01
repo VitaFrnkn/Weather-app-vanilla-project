@@ -91,10 +91,10 @@ main{
 }
 .weather-forecast{
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: space-around;
+   
 }
-.weather-forecast-day{
+.weather-forecast-date{
     text-align:center;
     font-size: 18px;
     color:rgb(73, 24, 119);
@@ -108,7 +108,7 @@ main{
 }
 .weather-forecast-temperature{
     text-align: center;
-    display: flex;
+    
     justify-content: center;
     margin-top: 10px;
 }
