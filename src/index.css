@@ -88,7 +88,27 @@ main{
     align-items: center; 
     margin-right: 40px;
 }
+.weather-forecast-day{
+    text-align:center;
+    font-size: 18px;
+}
+.weather-forecast-icon{
+    text-align: center;
+    font-size: 30px;
 
+}
+.weather-forecast-temperature{
+    text-align: center;
+}
+.weather-forecast-temperatures{
+    text-align: center;
+    
+}
+.weather-forecast-temperatures strong{
+    text-align: center;
+    padding: 5px;
+    
+}
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10px;
