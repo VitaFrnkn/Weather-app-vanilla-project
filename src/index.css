@@ -89,6 +89,11 @@ main{
     align-items: center; 
     margin-right: 40px;
 }
+.weather-forecast{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
 .weather-forecast-day{
     text-align:center;
     font-size: 18px;
