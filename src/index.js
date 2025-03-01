@@ -52,25 +52,26 @@ function searchCity(city){
 }
 function displayForecast(response){
     
-    let days = ["Sun","Mon","Tue","Wed","Thu"];
+    let daysOfWeek = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
     let forecastHtml = "";
     
-    response.data.daily.forEach(function (days){
-        
+    response.data.daily.slice(0, 5).forEach(function (dayData){
+        let date = new Date(dayData.time * 1000); // Convert timestamp to date
+        let dayName = daysOfWeek[date.getDay()]; // Get weekday name
         forecastHtml = forecastHtml + //concatenate and create a massive string injecting html
         `
         <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">${days}</div>
+                    <div class="weather-forecast-date">${dayName}</div>
                     
-                        <img scr="${days.condition.icon_url}" class="weather-forecast-icon"/>
+                        <img src="${dayData.condition.icon_url}" class="weather-forecast-icon"/>
                     
                     <div class="weather-forecast-temperature">
-                        <div class="weather-forecast-temperatures"><strong>${Math.round(days.temperature.maximum)} </strong>${Math.round(days.temperature.minimum)}</div>
+                        <div class="weather-forecast-temperatures"><strong>${Math.round(dayData.temperature.maximum)} </strong>${Math.round(dayData.temperature.minimum)}</div>
                     
                     </div>
                 </div>`;
     })
-    console.log(displayForecast);
+    console.log(response);
     let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML=forecastHtml;
     
@@ -86,4 +87,4 @@ let searchFormElement = document.querySelector('#search-form');
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("Tokyo");//default city when first opening the app
-displayForecast();
+displayForecast("Tokyo");
