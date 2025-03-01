@@ -17,6 +17,15 @@ function refreshWeather(response){
     humidityElement.innerHTML = response.data.temperature.humidity; //add humidity details
     windElement.innerHTML = response.data.wind.speed; //add wind details
     temperatureElement.innerHTML = Math.round(temperature); //add rounded temperature
+    getForecast(response.data.city);
+}
+
+function getForecast(city){
+    let apiKey = "oe1f0572f4bt753a71ffbc4045676795";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+
+    axios(apiUrl).then(displayForecast);
+
 }
 
 // formatting the date
@@ -41,23 +50,27 @@ function searchCity(city){
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(refreshWeather);
 }
-function displayForecast(){
+function displayForecast(response){
     
     let days = ["Sun","Mon","Tue","Wed","Thu"];
     let forecastHtml = "";
     
-    days.forEach(function (days){
+    response.data.daily.forEach(function (days){
+        
         forecastHtml = forecastHtml + //concatenate and create a massive string injecting html
         `
         <div class="weather-forecast-day">
                     <div class="weather-forecast-date">${days}</div>
-                    <div class="weather-forecast-icon">	&#9925;</div>
+                    
+                        <img scr="${days.condition.icon_url}" class="weather-forecast-icon"/>
+                    
                     <div class="weather-forecast-temperature">
-                        <div class="weather-forecast-temperatures"><strong>15° </strong> 9° </div>
+                        <div class="weather-forecast-temperatures"><strong>${Math.round(days.temperature.maximum)} </strong>${Math.round(days.temperature.minimum)}</div>
                     
                     </div>
                 </div>`;
     })
+    console.log(displayForecast);
     let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML=forecastHtml;
     
